@@ -1,19 +1,41 @@
 ﻿using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        string outstr;
-        string str1 = "The quick brown fox jumps over the lazy dog.";
-        string str2 = "banana";
-        string str3 = "apple";
-        string[] strs = { "one", "two", "three", "four" };
-            outstr = String.Join("--", strs);
-            Console.WriteLine(outstr);
-            int result = String.Compare(str2, "a");
-            Console.WriteLine(result);
-            int result2 = String.Compare(str3, "i");
-            Console.WriteLine(result2);
+        Console.WriteLine("Which letter do you want to search?");
+        string letter = Console.ReadLine();
+        List<int> final = new List<int>();
+        string[] fruits =
+        {
+            "Apple", "Apricot", "Avocado", "Banana", "Blackberry", "Blueberry", "Cherry", "Coconut", "Grapes", "Guava",
+            "Kiwi", "Lemon", "Mango", "Orange", "Papaya", "Peach", "Pear", "Pineapple", "Plum", "Raspberry",
+            "Strawberry", "Watermelon", "Dragon Fruit", "Passion Fruit", "Lychee", "Fig", "Pomegranate", "Kiwifruit",
+            "Cantaloupe", "Honeydew"
+        };
+        string[] fruitorigin =
+        {
+            "Apple", "Apricot", "Avocado", "Banana", "Blackberry", "Blueberry", "Cherry", "Coconut", "Grapes", "Guava",
+            "Kiwi", "Lemon", "Mango", "Orange", "Papaya", "Peach", "Pear", "Pineapple", "Plum", "Raspberry",
+            "Strawberry", "Watermelon", "Dragon Fruit", "Passion Fruit", "Lychee", "Fig", "Pomegranate", "Kiwifruit",
+            "Cantaloupe", "Honeydew"
+        };
+        for (int i = 0; i < fruits.Length -1; i++)
+        {
+            fruits[i] = fruits[i].ToLower();
+        }
+        for (int i = 0; i < fruits.Length -1; i++)
+        {
+            if(fruits[i].Contains(letter.ToLower()))
+            {
+                // final.Add(fruits[i]);
+                final.Add(i);
+            }
+        }
+        
+        for (int i = 0; i < final.Count -1; i++)
+        {
+            Console.WriteLine(fruitorigin[i]);
+        }
     }
     }
