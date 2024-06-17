@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListSearcher", "ListSearcher\ListSearcher.csproj", "{4FAEFE7D-DFEF-438E-8E20-29646C4A4F8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTraining1", "StringTraining1\StringTraining1.csproj", "{8A3DB304-931F-4EA0-A344-42B3AEC4A785}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsTraining", "FunctionsTraining\FunctionsTraining.csproj", "{8A3DB304-931F-4EA0-A344-42B3AEC4A785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
