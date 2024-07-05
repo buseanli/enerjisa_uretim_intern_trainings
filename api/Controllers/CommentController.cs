@@ -56,7 +56,6 @@ namespace api.Controllers
             if(!await _stockRepo.StockExists(stockId)){
                 return BadRequest("Stock doesn't exist");
             }
-            //TODO bunu niye buraya koyduk? - user generated content
             var username = User.GetUsername();
             var appUser = await _userManager.FindByNameAsync(username);
 
